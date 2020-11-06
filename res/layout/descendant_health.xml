@@ -1,407 +1,414 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="8dp"
-    android:orientation="vertical">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:elevation="8dp"
-        android:text="Health Overview"
-        android:visibility="gone"
-        android:textColor="?android:attr/colorAccent"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="16dp"
-        android:padding="8dp"
-        android:elevation="8dp"
-        android:background="@drawable/cards_background"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
         android:orientation="vertical">
 
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/pill_background"
-            android:elevation="8dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:elevation="8dp"
-                android:text="COVID-19 Data"
-                android:textSize="16dp"
-                android:textStyle="bold" />
-        </LinearLayout>
+            android:layout_gravity="center_horizontal"
+            android:elevation="8dp"
+            android:text="Health Overview"
+            android:visibility="gone"
+            android:textColor="?android:attr/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:padding="8dp"
             android:elevation="8dp"
+            android:background="@drawable/cards_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pill_background"
+                android:elevation="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:elevation="8dp"
+                    android:text="COVID-19 Data"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:elevation="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:elevation="8dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_weight="1">
+
+                    <FrameLayout
+                        android:id="@+id/first_block"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/cards"
+                        android:elevation="16dp">
+
+                        <RelativeLayout
+                            android:elevation="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:id="@+id/today_cases_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/ic_today" />
+
+                            <TextView
+                                android:id="@+id/today_cases_text"
+                                android:textColor="#e1b8bc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/today_cases_icon"
+                                android:layout_centerHorizontal="true"
+                                android:text="Cases today"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cases_number"
+                                android:textColor="#e1b8bc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/today_cases_text"
+                                android:layout_centerHorizontal="true"
+                                android:text="14"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:elevation="8dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <FrameLayout
+                        android:id="@+id/second_block"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/cards"
+                        android:elevation="16dp">
+
+                        <RelativeLayout
+                            android:elevation="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:id="@+id/today_deaths_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/ic_deaths" />
+
+                            <TextView
+                                android:textColor="#e1b8bc"
+                                android:id="@+id/today_deaths_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/today_deaths_icon"
+                                android:layout_centerHorizontal="true"
+                                android:text="Deaths today"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:textColor="#e1b8bc"
+                                android:id="@+id/today_deaths_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/today_deaths_text"
+                                android:layout_centerHorizontal="true"
+                                android:text="14"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </FrameLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:elevation="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:elevation="8dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_weight="1">
+
+                    <FrameLayout
+                        android:id="@+id/third_block"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/cards"
+                        android:elevation="16dp">
+
+                        <RelativeLayout
+                            android:elevation="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:id="@+id/total_cases_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/ic_total_cases" />
+
+                            <TextView
+                                android:id="@+id/total_cases_text"
+                                android:textColor="#e1b8bc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/total_cases_icon"
+                                android:layout_centerHorizontal="true"
+                                android:text="Total cases"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/total_cases_number"
+                                android:textColor="#e1b8bc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/total_cases_text"
+                                android:layout_centerHorizontal="true"
+                                android:text="140"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <FrameLayout
+                        android:id="@+id/fourth_block"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/cards"
+                        android:elevation="16dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:id="@+id/critical_cases_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/ic_hospital" />
+
+                            <TextView
+                                android:id="@+id/critical_cases_text"
+                                android:textColor="#e1b8bc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/critical_cases_icon"
+                                android:layout_centerHorizontal="true"
+                                android:text="Critical cases"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:textColor="#e1b8bc"
+                                android:id="@+id/critical_cases_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/critical_cases_text"
+                                android:layout_centerHorizontal="true"
+                                android:text="14"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </FrameLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
-
-            <RelativeLayout
-                android:elevation="8dp"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:layout_weight="1">
-
-                <FrameLayout
-                    android:id="@+id/first_block"
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="3"
-                    android:background="@drawable/cards"
-                    android:elevation="16dp">
-
-                    <RelativeLayout
-                        android:elevation="8dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|center_vertical"
-                        android:layout_margin="10dp">
-
-                        <ImageView
-                            android:id="@+id/today_cases_icon"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/ic_today" />
-
-                        <TextView
-                            android:id="@+id/today_cases_text"
-                            android:textColor="#e1b8bc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/today_cases_icon"
-                            android:layout_centerHorizontal="true"
-                            android:text="Cases today"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/cases_number"
-                            android:textColor="#e1b8bc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/today_cases_text"
-                            android:layout_centerHorizontal="true"
-                            android:text="14"
-                            android:textSize="20dp" />
-                    </RelativeLayout>
-                </FrameLayout>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:elevation="8dp"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <FrameLayout
-                    android:id="@+id/second_block"
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/cards"
-                    android:elevation="16dp">
-
-                    <RelativeLayout
-                        android:elevation="8dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|center_vertical"
-                        android:layout_margin="10dp">
-
-                        <ImageView
-                            android:id="@+id/today_deaths_icon"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/ic_deaths" />
-
-                        <TextView
-                            android:textColor="#e1b8bc"
-                            android:id="@+id/today_deaths_text"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/today_deaths_icon"
-                            android:layout_centerHorizontal="true"
-                            android:text="Deaths today"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:textColor="#e1b8bc"
-                            android:id="@+id/today_deaths_number"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/today_deaths_text"
-                            android:layout_centerHorizontal="true"
-                            android:text="14"
-                            android:textSize="20dp" />
-                    </RelativeLayout>
-                </FrameLayout>
-            </RelativeLayout>
-        </LinearLayout>
-
-        <LinearLayout
+            android:background="@drawable/cards_background"
+            android:padding="8dp"
             android:elevation="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <RelativeLayout
-                android:elevation="8dp"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:layout_weight="1">
-
-                <FrameLayout
-                    android:id="@+id/third_block"
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/cards"
-                    android:elevation="16dp">
-
-                    <RelativeLayout
-                        android:elevation="8dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|center_vertical"
-                        android:layout_margin="10dp">
-
-                        <ImageView
-                            android:id="@+id/total_cases_icon"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/ic_total_cases" />
-
-                        <TextView
-                            android:id="@+id/total_cases_text"
-                            android:textColor="#e1b8bc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/total_cases_icon"
-                            android:layout_centerHorizontal="true"
-                            android:text="Total cases"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/total_cases_number"
-                            android:textColor="#e1b8bc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/total_cases_text"
-                            android:layout_centerHorizontal="true"
-                            android:text="140"
-                            android:textSize="20dp" />
-                    </RelativeLayout>
-                </FrameLayout>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <FrameLayout
-                    android:id="@+id/fourth_block"
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/cards"
-                    android:elevation="16dp">
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|center_vertical"
-                        android:layout_margin="10dp">
-
-                        <ImageView
-                            android:id="@+id/critical_cases_icon"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/ic_hospital" />
-
-                        <TextView
-                            android:id="@+id/critical_cases_text"
-                            android:textColor="#e1b8bc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/critical_cases_icon"
-                            android:layout_centerHorizontal="true"
-                            android:text="Critical cases"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:textColor="#e1b8bc"
-                            android:id="@+id/critical_cases_number"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/critical_cases_text"
-                            android:layout_centerHorizontal="true"
-                            android:text="14"
-                            android:textSize="20dp" />
-                    </RelativeLayout>
-                </FrameLayout>
-            </RelativeLayout>
-        </LinearLayout>
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/cards_background"
-        android:padding="8dp"
-        android:elevation="8dp"
-        android:orientation="vertical">
-
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/pill_background"
-            android:elevation="8dp">
-
-            <TextView
+            <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:elevation="8dp"
-                android:text="Health Options"
-                android:textSize="16dp"
-                android:textStyle="bold" />
-        </FrameLayout>
+                android:background="@drawable/pill_background"
+                android:elevation="8dp">
 
-        <RelativeLayout
-            android:layout_marginTop="16dp"
-            android:elevation="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <RelativeLayout android:id="@+id/first_switch_rl"
-                android:elevation="8dp"
-                android:layout_centerInParent="true"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView android:id="@+id/first_switch_icon"
-                    android:layout_marginStart="8dp"
-                    android:layout_centerVertical="true"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:tint="?android:attr/colorAccent"
-                    android:src="@drawable/ic_sleep"/>
-
-                <TextView android:id="@+id/first_switch_title"
-                    android:layout_toEndOf="@+id/first_switch_icon"
-                    android:layout_toStartOf="@+id/sw"
-                    android:layout_marginTop="4dp"
-                    android:paddingStart="12dp"
-                    android:paddingEnd="14dp"
-                    android:text="Sleep notification"
-                    android:textStyle="bold"
-                    android:textSize="18dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-                <TextView android:id="@+id/first_switch_summary"
-                    android:layout_marginBottom="4dp"
-                    android:layout_below="@+id/first_switch_title"
-                    android:layout_toEndOf="@+id/first_switch_icon"
-                    android:layout_toStartOf="@+id/first_switch"
-                    android:paddingStart="12dp"
-                    android:paddingEnd="14dp"
-                    android:text="Enable notifications with tips when phone interferes with your sleep "
-                    android:textSize="14dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-                <Switch android:id="@+id/first_switch"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"/>
-            </RelativeLayout>
+                    android:layout_margin="8dp"
+                    android:elevation="8dp"
+                    android:text="Health Options"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </FrameLayout>
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_marginTop="16dp"
-            android:elevation="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <RelativeLayout android:id="@+id/second_switch_rl"
+            <RelativeLayout
+                android:layout_marginTop="16dp"
                 android:elevation="8dp"
-                android:layout_centerInParent="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <ImageView android:id="@+id/second_switch_icon"
-                    android:layout_marginStart="8dp"
-                    android:layout_centerVertical="true"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:tint="?android:attr/colorAccent"
-                    android:src="@drawable/ic_screen_on"/>
 
-                <TextView android:id="@+id/second_switch_title"
-                    android:layout_toEndOf="@+id/second_switch_icon"
-                    android:layout_toStartOf="@+id/second_switch"
-                    android:layout_marginTop="4dp"
-                    android:paddingStart="12dp"
-                    android:paddingEnd="14dp"
-                    android:text="Screen on notification"
-                    android:textStyle="bold"
-                    android:textSize="18dp"
+                <RelativeLayout android:id="@+id/first_switch_rl"
+                    android:elevation="8dp"
+                    android:layout_centerInParent="true"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-                <TextView android:id="@+id/second_switch_summary"
-                    android:layout_marginBottom="4dp"
-                    android:layout_below="@+id/second_switch_title"
-                    android:layout_toEndOf="@+id/second_switch_icon"
-                    android:layout_toStartOf="@+id/second_switch"
-                    android:paddingStart="12dp"
-                    android:paddingEnd="14dp"
-                    android:text="Enable notifications that will warn you when your display is continuously on for an hour"
-                    android:textSize="14dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-                <Switch android:id="@+id/second_switch"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/first_switch_icon"
+                        android:layout_marginStart="8dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:tint="?android:attr/colorAccent"
+                        android:src="@drawable/ic_sleep"/>
+
+                    <TextView android:id="@+id/first_switch_title"
+                        android:layout_toEndOf="@+id/first_switch_icon"
+                        android:layout_toStartOf="@+id/sw"
+                        android:layout_marginTop="4dp"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="14dp"
+                        android:text="Sleep notification"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView android:id="@+id/first_switch_summary"
+                        android:layout_marginBottom="4dp"
+                        android:layout_below="@+id/first_switch_title"
+                        android:layout_toEndOf="@+id/first_switch_icon"
+                        android:layout_toStartOf="@+id/first_switch"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="14dp"
+                        android:text="Enable notifications with tips when phone interferes with your sleep "
+                        android:textSize="14dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Switch android:id="@+id/first_switch"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"/>
+                </RelativeLayout>
+
             </RelativeLayout>
 
-        </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:elevation="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout android:id="@+id/second_switch_rl"
+                    android:elevation="8dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/second_switch_icon"
+                        android:layout_marginStart="8dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:tint="?android:attr/colorAccent"
+                        android:src="@drawable/ic_screen_on"/>
+
+                    <TextView android:id="@+id/second_switch_title"
+                        android:layout_toEndOf="@+id/second_switch_icon"
+                        android:layout_toStartOf="@+id/second_switch"
+                        android:layout_marginTop="4dp"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="14dp"
+                        android:text="Screen on notification"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView android:id="@+id/second_switch_summary"
+                        android:layout_marginBottom="4dp"
+                        android:layout_below="@+id/second_switch_title"
+                        android:layout_toEndOf="@+id/second_switch_icon"
+                        android:layout_toStartOf="@+id/second_switch"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="14dp"
+                        android:text="Enable notifications that will warn you when your display is continuously on for an hour"
+                        android:textSize="14dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Switch android:id="@+id/second_switch"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
