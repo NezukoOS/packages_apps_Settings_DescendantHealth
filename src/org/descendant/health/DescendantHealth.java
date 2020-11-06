@@ -14,72 +14,45 @@
  * limitations under the License.
  */
 
-package org.descendant.utility;
+package org.descendant.health;
 
 import com.android.internal.logging.nano.MetricsProto;
 
 import android.app.Activity;
-import android.content.pm.ActivityInfo;
-import android.content.res.Configuration;
+import androidx.fragment.app.Fragment;
+import android.content.Context;
 import android.os.Bundle;
-import android.view.Surface;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import com.android.settings.R;
 
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.PreferenceScreen;
+public class DescendantHealth extends Fragment implements View.OnClickListener {
 
-import com.android.settings.SettingsPreferenceFragment;
-
-public class DescendantUtility extends SettingsPreferenceFragment {
-
-    private PreferenceCategory mLedsCategory;
-    private Preference mChargingLeds;
+    public Context mContext;
 
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.descendant_utility);
-        mLedsCategory = (PreferenceCategory) findPreference("descendant_leds");
-        mChargingLeds = (Preference) findPreference("descendant_charging_light");
-        if (mChargingLeds != null
-                && !getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
-            mLedsCategory.removePreference(mChargingLeds);
-        }
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override
-    public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.DESCENDANT_SETTINGS;
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+        Bundle savedInstanceState) {
+            mContext = getActivity().getApplicationContext();
+            getActivity().setTitle("Descendant Health");
+            View view = inflater.inflate(R.layout.descendant_health, container, false);
+            //Add views
+            if (view != null) {
+            }
+            //add listeners
+            //cardview2.setOnClickListener(this)
+            return view;
     }
 
-    public static void lockCurrentOrientation(Activity activity) {
-        int currentRotation = activity.getWindowManager().getDefaultDisplay().getRotation();
-        int orientation = activity.getResources().getConfiguration().orientation;
-        int frozenRotation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED;
-        switch (currentRotation) {
-            case Surface.ROTATION_0:
-                frozenRotation = orientation == Configuration.ORIENTATION_LANDSCAPE
-                        ? ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-                        : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
-                break;
-            case Surface.ROTATION_90:
-                frozenRotation = orientation == Configuration.ORIENTATION_PORTRAIT
-                        ? ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT
-                        : ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
-                break;
-            case Surface.ROTATION_180:
-                frozenRotation = orientation == Configuration.ORIENTATION_LANDSCAPE
-                        ? ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE
-                        : ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT;
-                break;
-            case Surface.ROTATION_270:
-                frozenRotation = orientation == Configuration.ORIENTATION_PORTRAIT
-                        ? ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-                        : ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE;
-                break;
-        }
-        activity.setRequestedOrientation(frozenRotation);
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {}
     }
+
 }
