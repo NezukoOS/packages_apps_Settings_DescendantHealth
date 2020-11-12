@@ -166,8 +166,10 @@ public class DescendantHealth extends Fragment implements View.OnClickListener, 
     }
 
     private void setCreateSwitchStatus() {
-        mScreenSwitchStatus = "1".equals(Settings.System.getString(mContext.getContentResolver(), "descendant_health_screen_on").trim());
-        mSleepSwitchStatus = "1".equals(Settings.System.getString(mContext.getContentResolver(), "descendant_health_sleep").trim());
+        String healthScreenOn = Settings.System.getString(mContext.getContentResolver(), "descendant_health_screen_on");
+        String healthSleep = Settings.System.getString(mContext.getContentResolver(), "descendant_health_sleep");
+        mScreenSwitchStatus = healthScreenOn  != null ? "1".equals(healthScreenOn.trim()) : false;
+        mSleepSwitchStatus = healthSleep  != null ? "1".equals(healthScreenOn.trim()) : false;
         mSleepNotif.setChecked(mSleepSwitchStatus);
         mScreenOnNotif.setChecked(mScreenSwitchStatus);
     }
