@@ -124,14 +124,14 @@ public class DescendantHealth extends Fragment implements View.OnClickListener, 
             mUpdateCovid.animate().rotation(360).setDuration(500).withStartAction(new Runnable() {
                 @Override
                 public void run() {
-                    mCovidDataObtained.setText("Updating...");
+                    mCovidDataObtained.setText(mContext.getResources().getString(R.string.covid_update_status_updating));
                 }
             }).withEndAction(new Runnable() {
                 @Override
                 public void run() {
                     setupCOVIDView();
                     if (!mDataError) {
-                        mCovidDataObtained.setText("Following data has been updated " + mCOVIDDataArray[6]);
+                        mCovidDataObtained.setText(mContext.getResources().getString(R.string.covid_update_status_updated) + " " +mCOVIDDataArray[6]);
                     } else {
                         if (mCovidDataObtained.getVisibility() == View.VISIBLE)
                             mCovidDataObtained.setVisibility(View.INVISIBLE);
@@ -169,7 +169,7 @@ public class DescendantHealth extends Fragment implements View.OnClickListener, 
         String healthScreenOn = Settings.System.getString(mContext.getContentResolver(), "descendant_health_screen_on");
         String healthSleep = Settings.System.getString(mContext.getContentResolver(), "descendant_health_sleep");
         mScreenSwitchStatus = healthScreenOn  != null ? "1".equals(healthScreenOn.trim()) : false;
-        mSleepSwitchStatus = healthSleep  != null ? "1".equals(healthScreenOn.trim()) : false;
+        mSleepSwitchStatus = healthSleep  != null ? "1".equals(healthSleep.trim()) : false;
         mSleepNotif.setChecked(mSleepSwitchStatus);
         mScreenOnNotif.setChecked(mScreenSwitchStatus);
     }
@@ -244,19 +244,19 @@ public class DescendantHealth extends Fragment implements View.OnClickListener, 
                 break;*/
             case "datacovid":
                 Log.d("Dil3mm4", "JOINED DATA COVID WITH FILLDATA");
-                mTodayCasesTitle.setText("Cases today");
-                mTodayDeathsTitle.setText("Deaths today");
-                mTotalCasesTitle.setText("Total cases");
-                mCriticalCasesTitle.setText("Critical cases");
+                mTodayCasesTitle.setText(mContext.getResources().getString(R.string.covid_cases_title));
+                mTodayDeathsTitle.setText(mContext.getResources().getString(R.string.covid_deaths_title));
+                mTotalCasesTitle.setText(mContext.getResources().getString(R.string.covid_total_cases_title));
+                mCriticalCasesTitle.setText(mContext.getResources().getString(R.string.covid_critical_cases_title));
                 mCovidDataObtained.setVisibility(mDataError ? View.INVISIBLE : View.VISIBLE);
                 if (mCovidDataObtained.getVisibility() == View.VISIBLE) {
-                    mCovidDataObtained.setText("Following data were obtained on " + mCOVIDDataArray[6]);
+                    mCovidDataObtained.setText(mContext.getResources().getString(R.string.covid_update_status_updated) + " " + mCOVIDDataArray[6]);
                 }
-                mCovidDataSectionTitle.setText(mDataError ? "COVID-19 Data is unavailable" : "COVID-19 Data in " + mCOVIDDataArray[4]);
-                mTodayCasesNumber.setText(mDataError ?  "No data" : mCOVIDDataArray[0]);
-                mTodayDeathsNumber.setText(mDataError ?  "No data" : mCOVIDDataArray[1]);
-                mTotalCasesNumber.setText(mDataError ?  "No data" : mCOVIDDataArray[2]);
-                mCriticalCasesNumber.setText(mDataError ?  "No data" : mCOVIDDataArray[3]);
+                mCovidDataSectionTitle.setText(mDataError ? mContext.getResources().getString(R.string.covid_data_unavailable) : mContext.getResources().getString(R.string.covid_data_available) + " " + mCOVIDDataArray[4]);
+                mTodayCasesNumber.setText(mDataError ?  mContext.getResources().getString(R.string.covid_no_data) : mCOVIDDataArray[0]);
+                mTodayDeathsNumber.setText(mDataError ?  mContext.getResources().getString(R.string.covid_no_data) : mCOVIDDataArray[1]);
+                mTotalCasesNumber.setText(mDataError ?  mContext.getResources().getString(R.string.covid_no_data) : mCOVIDDataArray[2]);
+                mCriticalCasesNumber.setText(mDataError ?  mContext.getResources().getString(R.string.covid_no_data) : mCOVIDDataArray[3]);
                 break;
             default:
         }
