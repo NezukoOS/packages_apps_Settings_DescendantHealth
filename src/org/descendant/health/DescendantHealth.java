@@ -110,6 +110,7 @@ public class DescendantHealth extends Fragment implements View.OnClickListener, 
 
             //add listeners
             mSleepNotif.setOnCheckedChangeListener(this);
+            mScreenOnNotif.setOnCheckedChangeListener(this);
             mUpdateCovid.setOnClickListener(this);
             //mInfoCovid.setOnClickListener(this);
             setupCOVIDView();
@@ -177,8 +178,10 @@ public class DescendantHealth extends Fragment implements View.OnClickListener, 
     private void updateSwitchStatus(View v, boolean b) {
         if (v == mSleepNotif)
             Settings.System.putIntForUser(mContext.getContentResolver(),"descendant_health_sleep", b ? 1 : 0, UserHandle.USER_CURRENT);
-        if (v == mScreenOnNotif)
+        if (v == mScreenOnNotif) {
+            Log.d("Dilemmone", String.valueOf(b));
             Settings.System.putIntForUser(mContext.getContentResolver(),"descendant_health_screen_on", b ? 1 : 0, UserHandle.USER_CURRENT);
+        }
     }
 
     private void setupCOVIDView() {
