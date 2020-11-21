@@ -428,6 +428,7 @@
             <RelativeLayout
                 android:animateLayoutChanges="true"
                 android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
                 android:elevation="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
