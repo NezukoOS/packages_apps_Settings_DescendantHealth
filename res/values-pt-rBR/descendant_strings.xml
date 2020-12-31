@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="covid_update_status_updating">Atualizando...</string>
+    <string name="covid_update_status_updated">Os seguintes dados foram atualizados</string>
+    <string name="covid_cases_title">Casos hoje</string>
+    <string name="covid_deaths_title">Mortes hoje</string>
+    <string name="covid_total_cases_title">Total de casos</string>
+    <string name="covid_critical_cases_title">Casos críticos</string>
+    <string name="covid_no_data">Não há dados</string>
+    <string name="covid_data_unavailable">Dados COVID-19 indisponíveis</string>
+    <string name="covid_data_available">Dados COVID-19 em</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="covid_update_status_updating">Päivitetään...</string>
+    <string name="covid_update_status_updated">Seuraavat tiedot on päivitetty</string>
+    <string name="covid_cases_title">Tapaukset tänään</string>
+    <string name="covid_deaths_title">Kuolemat tänään</string>
+    <string name="covid_total_cases_title">Tapauksia yhteensä</string>
+    <string name="covid_critical_cases_title">Kriittiset tapaukset</string>
+    <string name="covid_no_data">Ei tietoja</string>
+    <string name="covid_data_unavailable">COVID-19 Tietoja ei ole saatavilla</string>
+    <string name="covid_data_available">COVID-19 Tiedot</string>
+</resources>

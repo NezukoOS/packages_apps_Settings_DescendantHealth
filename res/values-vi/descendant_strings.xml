@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="covid_update_status_updating">Đang Cập Nhật...</string>
+    <string name="covid_update_status_updated">Dữ liệu sau đã được cập nhật</string>
+    <string name="covid_cases_title">Các trường hợp hôm nay</string>
+    <string name="covid_deaths_title">Những ca tử vong hôm nay</string>
+    <string name="covid_total_cases_title">Tổng số trường hợp</string>
+    <string name="covid_critical_cases_title">Trường hợp nghiêm trọng</string>
+    <string name="covid_no_data">Không có dữ liệu</string>
+    <string name="covid_data_unavailable">Dữ liệu COVID-19 không có sẵn</string>
+    <string name="covid_data_available">Dữ liệu COVID-19 trong</string>
+</resources>

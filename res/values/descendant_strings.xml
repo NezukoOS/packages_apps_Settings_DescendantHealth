@@ -1,0 +1,11 @@
+<resources>
+    <string name="covid_update_status_updating">Updating...</string>
+    <string name="covid_update_status_updated">Following data has been updated</string>
+    <string name="covid_cases_title">Cases today</string>
+    <string name="covid_deaths_title">Deaths today</string>
+    <string name="covid_total_cases_title">Total cases</string>
+    <string name="covid_critical_cases_title">Critical cases</string>
+    <string name="covid_no_data">No data</string>
+    <string name="covid_data_unavailable">COVID-19 Data is unavailable</string>
+    <string name="covid_data_available">COVID-19 Data in</string>
+</resources>

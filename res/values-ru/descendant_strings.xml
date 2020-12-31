@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="covid_update_status_updating">Обновление...</string>
+    <string name="covid_update_status_updated">Следующие данные были обновлены</string>
+    <string name="covid_cases_title">Случаи за сегодня</string>
+    <string name="covid_deaths_title">Смерти сегодня</string>
+    <string name="covid_total_cases_title">Всего случаев</string>
+    <string name="covid_critical_cases_title">Критические случаи</string>
+    <string name="covid_no_data">Нет данных</string>
+    <string name="covid_data_unavailable">Данные COVID-19 отсутствуют</string>
+    <string name="covid_data_available">Данные COVID-19 в</string>
+</resources>

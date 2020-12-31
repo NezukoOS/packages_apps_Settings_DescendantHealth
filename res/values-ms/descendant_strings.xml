@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="covid_update_status_updating">Sedang mengemaskini...</string>
+    <string name="covid_update_status_updated">Data berikut sudah dikemaskini</string>
+    <string name="covid_cases_title">Kes hari ini</string>
+    <string name="covid_deaths_title">Kematian hari ini</string>
+    <string name="covid_total_cases_title">Jumlah kes</string>
+    <string name="covid_critical_cases_title">Kes kritikal</string>
+    <string name="covid_no_data">Tiada data</string>
+    <string name="covid_data_unavailable">Data COVID-19 tidak tersedia</string>
+    <string name="covid_data_available">Data masuk COVID-19 </string>
+</resources>

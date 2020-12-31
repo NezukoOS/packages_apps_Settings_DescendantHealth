@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="covid_update_status_updating">Güncelleniyor...</string>
+    <string name="covid_update_status_updated">Aşağıdaki veri güncellendi</string>
+    <string name="covid_cases_title">Bugünkü vakalar</string>
+    <string name="covid_deaths_title">Bugünkü ölümler</string>
+    <string name="covid_total_cases_title">Toplam vakalar</string>
+    <string name="covid_critical_cases_title">Kritik vakalar</string>
+    <string name="covid_no_data">Veri yok</string>
+    <string name="covid_data_unavailable">COVID-19 verisine ulaşılamıyor</string>
+    <string name="covid_data_available">COVID-19 verisine ulaşıldı</string>
+</resources>
