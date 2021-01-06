@@ -9,4 +9,9 @@
     <string name="covid_no_data">Nessun dato</string>
     <string name="covid_data_unavailable">Dati COVID-19 non disponibili</string>
     <string name="covid_data_available">Dati COVID-19 in</string>
+    <string name="sleep_title">Notifiche Sonno</string>
+    <string name="sleep_summary">Abilita notifiche informative quando il telefono interferisce con il tuo sonno</string>
+    <string name="screen_on_title">Notifiche Schermo Attivo</string>
+    <string name="screen_on_summary">Abilita notifiche informative quando il tuo dispay è acceso da un\'ora</string>
+    <string name="health_options">Funzionalità Salute</string>
 </resources>

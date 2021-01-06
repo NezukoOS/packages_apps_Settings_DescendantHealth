@@ -8,4 +8,9 @@
     <string name="covid_no_data">No data</string>
     <string name="covid_data_unavailable">COVID-19 Data is unavailable</string>
     <string name="covid_data_available">COVID-19 Data in</string>
+    <string name="sleep_title">Sleep Notification</string>
+    <string name="sleep_summary">Enable notifications with tips when phone interferes with your sleep</string>
+    <string name="screen_on_title">Screen on notification</string>
+    <string name="screen_on_summary">Enable notifications that will warn you when your display is continuously on for an hour</string>
+    <string name="health_options">Health Options</string>
 </resources>

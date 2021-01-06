@@ -248,9 +248,13 @@ public class DescendantHealth extends Fragment implements View.OnClickListener, 
             case "datacovid":
                 Log.d("Dil3mm4", "JOINED DATA COVID WITH FILLDATA");
                 mTodayCasesTitle.setText(mContext.getResources().getString(R.string.covid_cases_title));
+                mTodayCasesTitle.setSelected(true);
                 mTodayDeathsTitle.setText(mContext.getResources().getString(R.string.covid_deaths_title));
+                mTodayDeathsTitle.setSelected(true);
                 mTotalCasesTitle.setText(mContext.getResources().getString(R.string.covid_total_cases_title));
+                mTotalCasesTitle.setSelected(true);
                 mCriticalCasesTitle.setText(mContext.getResources().getString(R.string.covid_critical_cases_title));
+                mCriticalCasesTitle.setSelected(true);
                 mCovidDataObtained.setVisibility(mDataError ? View.INVISIBLE : View.VISIBLE);
                 if (mCovidDataObtained.getVisibility() == View.VISIBLE) {
                     mCovidDataObtained.setText(mContext.getResources().getString(R.string.covid_update_status_updated) + " " + mCOVIDDataArray[6]);

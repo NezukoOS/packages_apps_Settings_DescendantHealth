@@ -12,6 +12,12 @@
         android:orientation="vertical">
 
         <TextView
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -39,6 +45,12 @@
                 android:elevation="8dp">
 
                 <TextView
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:scrollHorizontally="true"
                     android:id="@+id/covid_19_data"
                     android:background="@drawable/pill_background"
                     android:layout_width="wrap_content"
@@ -86,6 +98,12 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:scrollHorizontally="true"
                     android:id="@+id/covid_19_data_obtained"
                     android:layout_below="@+id/covid_19_data"
                     android:layout_width="wrap_content"
@@ -140,6 +158,12 @@
                                 android:src="@drawable/ic_today" />
 
                             <TextView
+                                android:singleLine="true"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:scrollHorizontally="true"
                                 android:id="@+id/today_cases_text"
                                 android:textColor="#e1b8bc"
                                 android:layout_width="wrap_content"
@@ -151,6 +175,12 @@
                                 android:textStyle="bold" />
 
                             <TextView
+                                android:singleLine="true"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:scrollHorizontally="true"
                                 android:id="@+id/cases_number"
                                 android:textColor="#e1b8bc"
                                 android:layout_width="wrap_content"
@@ -197,6 +227,12 @@
                                 android:src="@drawable/ic_deaths" />
 
                             <TextView
+                                android:singleLine="true"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:scrollHorizontally="true"
                                 android:textColor="#e1b8bc"
                                 android:id="@+id/today_deaths_text"
                                 android:layout_width="wrap_content"
@@ -208,6 +244,12 @@
                                 android:textStyle="bold" />
 
                             <TextView
+                                android:singleLine="true"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:scrollHorizontally="true"
                                 android:textColor="#e1b8bc"
                                 android:id="@+id/today_deaths_number"
                                 android:layout_width="wrap_content"
@@ -264,6 +306,12 @@
                                 android:src="@drawable/ic_total_cases" />
 
                             <TextView
+                                android:singleLine="true"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:scrollHorizontally="true"
                                 android:id="@+id/total_cases_text"
                                 android:textColor="#e1b8bc"
                                 android:layout_width="wrap_content"
@@ -275,6 +323,12 @@
                                 android:textStyle="bold" />
 
                             <TextView
+                                android:singleLine="true"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:scrollHorizontally="true"
                                 android:id="@+id/total_cases_number"
                                 android:textColor="#e1b8bc"
                                 android:layout_width="wrap_content"
@@ -319,6 +373,12 @@
                                 android:src="@drawable/ic_hospital" />
 
                             <TextView
+                                android:singleLine="true"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:scrollHorizontally="true"
                                 android:id="@+id/critical_cases_text"
                                 android:textColor="#e1b8bc"
                                 android:layout_width="wrap_content"
@@ -330,6 +390,12 @@
                                 android:textStyle="bold" />
 
                             <TextView
+                                android:singleLine="true"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:scrollHorizontally="true"
                                 android:textColor="#e1b8bc"
                                 android:id="@+id/critical_cases_number"
                                 android:layout_width="wrap_content"
@@ -367,7 +433,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:elevation="8dp"
-                    android:text="Health Options"
+                    android:text="@string/health_options"
                     android:textSize="16dp"
                     android:textStyle="bold" />
             </FrameLayout>
@@ -399,7 +465,7 @@
                         android:layout_marginTop="4dp"
                         android:paddingStart="12dp"
                         android:paddingEnd="14dp"
-                        android:text="Sleep notification"
+                        android:text="@string/sleep_title"
                         android:textStyle="bold"
                         android:textSize="18dp"
                         android:layout_width="match_parent"
@@ -411,7 +477,7 @@
                         android:layout_toStartOf="@+id/first_switch"
                         android:paddingStart="12dp"
                         android:paddingEnd="14dp"
-                        android:text="Enable notifications with tips when phone interferes with your sleep "
+                        android:text="@string/sleep_summary "
                         android:textSize="14dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
@@ -453,7 +519,7 @@
                         android:layout_marginTop="4dp"
                         android:paddingStart="12dp"
                         android:paddingEnd="14dp"
-                        android:text="Screen on notification"
+                        android:text="@string/screen_on_title"
                         android:textStyle="bold"
                         android:textSize="18dp"
                         android:layout_width="match_parent"
@@ -465,7 +531,7 @@
                         android:layout_toStartOf="@+id/second_switch"
                         android:paddingStart="12dp"
                         android:paddingEnd="14dp"
-                        android:text="Enable notifications that will warn you when your display is continuously on for an hour"
+                        android:text="@string/screen_on_summary"
                         android:textSize="14dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
