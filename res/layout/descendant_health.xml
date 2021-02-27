@@ -35,7 +35,6 @@
             android:paddingBottom="16dp"
             android:padding="8dp"
             android:elevation="8dp"
-            android:background="@drawable/cards_background"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -52,7 +51,6 @@
                     android:focusableInTouchMode="true"
                     android:scrollHorizontally="true"
                     android:id="@+id/covid_19_data"
-                    android:background="@drawable/pill_background"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
@@ -71,8 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:src="@drawable/ic_info_covid"
-                    android:background="@drawable/pill_background"/>
+                    android:src="@drawable/ic_info_covid"/>
                 <LinearLayout
                     android:animateLayoutChanges="true"
                     android:id="@+id/update_covid_container"
@@ -81,7 +78,6 @@
                     android:layout_width="wrap_content"
                     android:elevation="8dp"
                     android:padding="8dp"
-                    android:background="@drawable/pill_background"
                     android:layout_height="wrap_content">
                     <ImageView
                         android:id="@+id/update_covid"
@@ -416,7 +412,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/cards_background"
             android:padding="8dp"
             android:elevation="8dp"
             android:orientation="vertical">
@@ -425,7 +420,6 @@
                 android:animateLayoutChanges="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/pill_background"
                 android:elevation="8dp">
 
                 <TextView
