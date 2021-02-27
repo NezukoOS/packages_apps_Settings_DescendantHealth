@@ -2,4 +2,5 @@
     <color name="pill_bkg_col">#60cecece</color>
     <color name="pref_bkg_col">#4dcecece</color>
     <color name="cards_bkg_col">@color/dashboard_background_color</color>
+    <color name="text">#000000</color>
 </resources>

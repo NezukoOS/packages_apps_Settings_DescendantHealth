@@ -8,7 +8,6 @@
         android:animateLayoutChanges="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="8dp"
         android:orientation="vertical">
 
         <TextView
@@ -25,8 +24,7 @@
             android:text="Health Overview"
             android:visibility="gone"
             android:textColor="?android:attr/colorAccent"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textSize="20dp" />
 
         <LinearLayout
             android:animateLayoutChanges="true"
@@ -55,9 +53,10 @@
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:elevation="8dp"
+                    android:textColor="@color/text"
                     android:text="COVID-19 Data"
                     android:textSize="16dp"
-                    android:textStyle="bold" />
+                     />
 
                 <ImageView
                     android:elevation="8dp"
@@ -106,12 +105,22 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:elevation="8dp"
+                    android:textColor="@color/text"
                     android:text="COVID-19 Data"
-                    android:textSize="10dp"/>
+                    android:textSize="12dp"/>
             </LinearLayout>
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@android:color/darker_gray"
+                    android:alpha="0.5"/>
 
             <LinearLayout
                 android:animateLayoutChanges="true"
+                android:layout_margin="8dp"
                 android:elevation="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -168,7 +177,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:text="Cases today"
                                 android:textSize="20dp"
-                                android:textStyle="bold" />
+                                 />
 
                             <TextView
                                 android:singleLine="true"
@@ -237,7 +246,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:text="Deaths today"
                                 android:textSize="20dp"
-                                android:textStyle="bold" />
+                                 />
 
                             <TextView
                                 android:singleLine="true"
@@ -261,6 +270,7 @@
 
             <LinearLayout
                 android:animateLayoutChanges="true"
+                android:layout_margin="8dp"
                 android:elevation="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -316,7 +326,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:text="Total cases"
                                 android:textSize="20dp"
-                                android:textStyle="bold" />
+                                 />
 
                             <TextView
                                 android:singleLine="true"
@@ -383,7 +393,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:text="Critical cases"
                                 android:textSize="20dp"
-                                android:textStyle="bold" />
+                                 />
 
                             <TextView
                                 android:singleLine="true"
@@ -427,9 +437,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:elevation="8dp"
+                    android:textColor="@color/text"
                     android:text="@string/health_options"
                     android:textSize="16dp"
-                    android:textStyle="bold" />
+                     />
             </FrameLayout>
 
             <RelativeLayout
@@ -459,9 +470,10 @@
                         android:layout_marginTop="4dp"
                         android:paddingStart="12dp"
                         android:paddingEnd="14dp"
+                        android:textColor="@color/text"
                         android:text="@string/sleep_title"
-                        android:textStyle="bold"
-                        android:textSize="18dp"
+                        
+                        android:textSize="14dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <TextView android:id="@+id/first_switch_summary"
@@ -513,9 +525,9 @@
                         android:layout_marginTop="4dp"
                         android:paddingStart="12dp"
                         android:paddingEnd="14dp"
+                        android:textColor="@color/text"
                         android:text="@string/screen_on_title"
-                        android:textStyle="bold"
-                        android:textSize="18dp"
+                        android:textSize="14dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <TextView android:id="@+id/second_switch_summary"

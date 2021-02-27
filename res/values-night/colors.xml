@@ -2,4 +2,5 @@
     <color name="pill_bkg_col">#66191919</color>
     <color name="pref_bkg_col">#1a191919</color>
     <color name="cards_bkg_col">#59191919</color>
+    <color name="text">#FFFFFF</color>
 </resources>

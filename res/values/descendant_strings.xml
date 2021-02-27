@@ -1,6 +1,6 @@
 <resources>
     <string name="covid_update_status_updating">Updating data...</string>
-    <string name="covid_update_status_updated">The following data has been updated.</string>
+    <string name="covid_update_status_updated">The following data was last updated on</string>
     <string name="covid_cases_title">Cases today</string>
     <string name="covid_deaths_title">Deaths today</string>
     <string name="covid_total_cases_title">Total cases</string>

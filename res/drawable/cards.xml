@@ -5,7 +5,7 @@
                 android:radius="?android:attr/dialogCornerRadius"
                 />
             <solid
-                android:color="#FF9b111e"
+                android:color="#d20000"
                 />
             <padding
                 android:left="0dp"
