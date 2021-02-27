@@ -140,18 +140,6 @@ public class DescendantHealth extends Fragment implements View.OnClickListener, 
                 }
             }).start();
         }
-        /*if (v == mInfoCovid) {
-            Log.d("Dil3mm4", "iscomparisonshowable:  " + String.valueOf(isComparisonShowable()) + " " + "mIsComparingView: " + String.valueOf(mIsComparingView));
-            if (isComparisonShowable() && !mIsComparingView) {
-                Log.d("Dil3mm4", "comparing launched");
-                swapIcons("comparing");
-                fillData("comparing");
-            } else {
-                Log.d("Dil3mm4", "datacovid launched");
-                swapIcons("datacovid");
-                fillData("datacovid");
-            }
-        }*/
     }
 
     @Override
@@ -268,23 +256,5 @@ public class DescendantHealth extends Fragment implements View.OnClickListener, 
             default:
         }
     }
-
-
-    /*private boolean isComparisonShowable() {
-        String covidData = Settings.System.getString(mContext.getContentResolver(), "covid_data");
-        mCOVIDDataArray = covidData.split("]");
-        mDataError = mCOVIDDataArray.length != CORRECT_LENGTH;
-
-        if (!mDataError) {
-            int pos = Arrays.asList(mCOVIDDataArray).indexOf("-255");
-            if (pos > 6) {
-                Log.d("Dil3mm4", "comparison isn't showable");
-                return false;
-            } else {
-                return true;
-            }
-        }
-        return mDataError;
-    }*/
 
 }
