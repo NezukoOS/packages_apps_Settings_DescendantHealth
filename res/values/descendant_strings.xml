@@ -1,6 +1,6 @@
 <resources>
-    <string name="covid_update_status_updating">Updating...</string>
-    <string name="covid_update_status_updated">Following data has been updated</string>
+    <string name="covid_update_status_updating">Updating data...</string>
+    <string name="covid_update_status_updated">The following data has been updated.</string>
     <string name="covid_cases_title">Cases today</string>
     <string name="covid_deaths_title">Deaths today</string>
     <string name="covid_total_cases_title">Total cases</string>
@@ -9,8 +9,8 @@
     <string name="covid_data_unavailable">COVID-19 Data is unavailable</string>
     <string name="covid_data_available">COVID-19 Data in</string>
     <string name="sleep_title">Sleep Notification</string>
-    <string name="sleep_summary">Enable notifications with tips when phone interferes with your sleep</string>
+    <string name="sleep_summary">Enable notifications with tips for when phone interferes with your sleep.</string>
     <string name="screen_on_title">Screen on notification</string>
-    <string name="screen_on_summary">Enable notifications that will warn you when your display is continuously on for an hour</string>
+    <string name="screen_on_summary">Enable notifications that will warn you when your display is continuously on for an hour.</string>
     <string name="health_options">Health Options</string>
 </resources>
