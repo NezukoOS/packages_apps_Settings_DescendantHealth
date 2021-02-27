@@ -83,7 +83,7 @@ public class DescendantHealth extends Fragment implements View.OnClickListener, 
         Bundle savedInstanceState) {
             mIsComparingView = false;
             mContext = getActivity().getApplicationContext();
-            getActivity().setTitle("Descendant Health");
+            getActivity().setTitle("Nezuko Health");
             //gather settings
             View view = inflater.inflate(R.layout.descendant_health, container, false);
             //Add views

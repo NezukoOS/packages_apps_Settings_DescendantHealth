@@ -1,2 +1,2 @@
 LOCAL_PATH := $(call my-dir)
-include vendor/support/common.mk
+include vendor/dessupport/common.mk
