@@ -13,4 +13,6 @@
     <string name="screen_on_title">Screen on notification</string>
     <string name="screen_on_summary">Enable notifications that will warn you when your display is continuously on for an hour.</string>
     <string name="health_options">Health Options</string>
+    <string name="credits">Credits</string>
+    <string name="credit_summary">NezukoHealth is a fork of DescendantHealth crafted by Descendant. Credit is due where it is due and we are grateful to descendant for it.</string>
 </resources>
