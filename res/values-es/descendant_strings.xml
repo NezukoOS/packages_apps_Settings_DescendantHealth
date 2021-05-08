@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="covid_update_status_updating">Actualizando...</string>
-    <string name="covid_update_status_updated">El nodo SEO ha sido actualizado.</string>
-    <string name="covid_cases_title">Tareas para hoy</string>
-    <string name="covid_deaths_title">Muertes hoy</string>
+    <string name="covid_update_status_updated">Estos datos han sido actualizados el</string>
+    <string name="covid_cases_title">Casos nuevos</string>
+    <string name="covid_deaths_title">Muertes nuevas</string>
     <string name="covid_total_cases_title">Casos totales</string>
     <string name="covid_critical_cases_title">Casos críticos</string>
     <string name="covid_no_data">No hay datos</string>
-    <string name="covid_data_unavailable">Datos sobre COVID-19 no disponible</string>
+    <string name="covid_data_unavailable">Datos sobre COVID-19 no disponibles</string>
     <string name="covid_data_available">Datos COVID-19 en</string>
+    <string name="sleep_title">Notificaciones de sueño</string>
+    <string name="sleep_summary">Habilite las notificaciones con consejos para cuando el teléfono interfiera con su sueño.</string>
+    <string name="screen_on_title">Notificaciones con pantalla encendida</string>
+    <string name="screen_on_summary">Habilite las notificaciones que le advertirán cuando su pantalla esté encendida durante una hora.</string>
+    <string name="health_options">Opciones</string>
+    <string name="credits">Créditos</string>
+    <string name="credit_summary">NezukoHealth es un fork de DescendantHealth creada por Descendant. El crédito se debe a lo que se debe y agradecemos a Descendant por esto.</string>
 </resources>
